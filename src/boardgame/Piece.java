@@ -18,10 +18,10 @@ public abstract class Piece {
 	
 	public abstract boolean [][] possibleMoves();
 	
-	//Rook Metodo
-	// template Metodos
+	
+	
 	public boolean possibleMoves(Position position) {
-		return possibleMoves()[position.getColumn()][position.getColumn()];
+		return possibleMoves()[position.getColumn()][position.getColumn()];  //Rook Metodos  // template Metodos
 		
 	}
 	
