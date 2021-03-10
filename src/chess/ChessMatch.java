@@ -48,7 +48,7 @@ public class ChessMatch {
 	}
 	
 	private void validateSourcePosition(Position position) {
-		if (!board.thereIsApice(position)) {
+		if (!board.thereIsAPiece(position)) {
 			throw new ChessException("There is no piece on source position");
 		}
 		if (!board.piece(position).isThereAnyPossibleMove()) {
@@ -57,7 +57,7 @@ public class ChessMatch {
 	}
 	
 	private void validateTargetPosition(Position source, Position target) {
-		if (!board.piece(source).possibleMoves(target)) {
+		if (!board.piece(source).possibleMove(target)) {
 			throw new ChessException("The chosen piece can't move to target position");
 		}
 	}
